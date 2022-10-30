@@ -1,0 +1,11 @@
+"""给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。"""
+
+
+def repeated_substring_pattern(s: str) -> bool:
+    for i in range(1, length:=len(s)):
+        if s[:i] * (length // len(s[:i])) == s:
+            return True
+    return False
+
+
+print(repeated_substring_pattern(s = "abcabcabcabc"))
